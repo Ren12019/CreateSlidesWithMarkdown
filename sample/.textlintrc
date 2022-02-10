@@ -1,0 +1,11 @@
+{
+    "rules": {
+        // それぞれのルールのデフォルト値
+        "common-misspellings": true,
+        "preset-ja-spacing": true,     
+        "preset-ja-technical-writing": true,
+        "preset-japanese": true,
+        "spellcheck-tech-word": true
+        
+    }
+}
