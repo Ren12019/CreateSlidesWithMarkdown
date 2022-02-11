@@ -1,0 +1,1729 @@
+/* @theme serio */
+
+@import "default";
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400,500,700,900&display=swap");
+
+/* global variable */
+:root {
+  --section-r-bdr-color: #e090b8;
+  --header-bg-color: #ff0000;
+  --header-color: #ff0000;
+  --footer-bg-color: #556dda;
+  --footer-color: #ffffff;
+  --charactor-color: #222222;
+  --charactor-custom1-color: #535151;
+  --headline-color: #535151;
+  --headline-bg-bottom-color: #535151;
+  --headline-bgr-left-color: #556dda;
+  --headline-bgr-bottom-color: #556dda;
+  --table-bdr-color: #535151;
+  --table-tr-child-bg-color: #f5f5f5;
+  --table-th-bg-color: #b0c4de;
+  --table-td-color: #222222;
+  --grad-1-bg-color: #e2ecf8;
+  --grad-2-bg-color: #ffffff;
+  --pos-left: 50%;
+}
+
+/* page style in default section */
+section {
+  position: static;
+  height: 720px;
+  width: 1280px;
+  padding-top: 110px;
+  padding-left: 64px;
+  justify-content: start;
+  color: var(--charactor-color);
+  font-family: "Noto Sans JP", sans-serif;
+  border-right: 40px solid var(--section-r-bdr-color);
+  padding-bottom: 0px;
+}
+
+section h1,
+section h2 {
+  color: var(--headline-color);
+  position: absolute;
+  top: 16px;
+  left: 32px;
+  right: 40px;
+  padding-top: 12px;
+  padding-left: 16px;
+  padding-bottom: 6px;
+  border-left: solid 15px var(--headline-bgr-left-color);
+  border-bottom: solid 5px var(--headline-bgr-bottom-color);
+  font-weight: bold;
+}
+
+section table {
+  border: 3px;
+  font-size: 24px;
+}
+
+section table td {
+  border: 1px solid var(--table-bdr-color);
+}
+
+section table th {
+  background-color: var(--table-th-bg-color);
+  border: 1px solid var(--table-bdr-color);
+  color: var(--table-td-color);
+}
+
+section table tr:nth-child(even) {
+  background-color: var(--table-tr-child-bg-color);
+}
+
+section header {
+  position: absolute;
+  font-size: 20px;
+  color: var(--header-color);
+  right: 0px;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 0px;
+  max-width: 140px;
+  left: 83%;
+  border: solid 1px var(--header-bg-color);
+  border-radius: 3px;
+}
+
+section footer {
+  font-size: 16px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  color: var(--footer-color);
+  background-color: var(--footer-bg-color);
+  height: 30px;
+  padding-top: 4px;
+  padding-left: 32px;
+}
+
+section:after {
+  padding-right: 22px;
+  padding-bottom: 8px;
+}
+
+section .left {
+  position: absolute;
+  width: calc(50% - 64px - 16px);
+}
+
+section .right {
+  position: absolute;
+  left: calc(50% + 16px);
+  width: calc(50% - 64px - 16px);
+}
+
+section .middle {
+  top: 50%;
+  vertical-align: middle;
+  transform: translate(0%, -50%);
+}
+
+/* page style in "top" */
+section.top {
+  padding-top: 0px;
+  justify-content: start;
+}
+
+section.top h1,
+section.top h2,
+section.top h3,
+section.top h4,
+section.top h5,
+section.top h6 {
+  color: var(--headline-color);
+  border: none;
+  border-bottom: solid 1px var(--headline-bg-bottom-color);
+  padding-left: 0px;
+  margin-right: 50px;
+  margin-left: 35%;
+  top: 35%;
+  font-size: 42px;
+}
+
+section.top p {
+  color: var(--charactor-custom1-color);
+  padding-top: 200px;
+  text-align: right;
+  font-size: 28px;
+  margin-right: -20px;
+  font-weight: 300;
+}
+
+section.top img {
+  position: absolute;
+  top: calc((100% - 256px) / 2);
+  left: 40px;
+  width: 50%;
+  width: 430px;
+}
+
+/* page style in "title" */
+section.title {
+  position: static;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  justify-content: center;
+}
+
+section.title header {
+  color: var(--header-color);
+}
+
+section.title footer {
+  color: var(--footer-color);
+}
+
+section.title h1,
+section.title h2 {
+  left: 32px;
+  padding-left: 0px;
+  position: static;
+  border: none;
+  background: none;
+}
+
+/* page style in "section_sp" */
+section.section_sp {
+  padding-top: 100px;
+  justify-content: start;
+}
+
+section.section_sp img {
+  position: absolute;
+  top: 120px;
+  left: var(--pos-left);
+}
+
+/* page style in "subsection" */
+section.subsection {
+  padding-top: 0px;
+  padding-left: 64px;
+  padding-right: 10px;
+  justify-content: center;
+}
+
+section.subsection * {
+  padding-right: 20px;
+}
+
+section.subsection h1,
+section.subsection h2 {
+  position: static;
+  border: none;
+  left: 16px;
+  margin-left: -32px;
+  margin-top: 0px;
+  margin-right: -10px;
+}
+
+section.subsection header {
+  position: absolute;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 3px;
+  border: solid 1px var(--header-bg-color);
+  color: var(--header-color);
+}
+
+/* page style in "subsection_sp" */
+section.subsection_sp {
+  justify-content: center;
+}
+
+section.subsection_sp img {
+  position: absolute;
+  top: 120px;
+  left: var(--pos-left);
+}
+
+section.subsection_sp h1,
+section.subsection_sp h2 {
+  padding: 30px 0px 0px 0px;
+  margin: 0px;
+  color: #222222;
+  position: static;
+  border: none;
+}
+
+/* custom headline position to center */
+section.hl_center h1,
+section.hl_center h2,
+section.hl_center h3,
+section.hl_center h4,
+section.hl_center h5,
+section.hl_center h6 {
+  text-align: center;
+}
+
+/* custom img position to left percentage */
+section.cus_pos_l_0 {
+  --pos-left: 0%;
+}
+section.cus_pos_l_1 {
+  --pos-left: 1%;
+}
+section.cus_pos_l_2 {
+  --pos-left: 2%;
+}
+section.cus_pos_l_3 {
+  --pos-left: 3%;
+}
+section.cus_pos_l_4 {
+  --pos-left: 4%;
+}
+section.cus_pos_l_5 {
+  --pos-left: 5%;
+}
+section.cus_pos_l_6 {
+  --pos-left: 6%;
+}
+section.cus_pos_l_7 {
+  --pos-left: 7%;
+}
+section.cus_pos_l_8 {
+  --pos-left: 8%;
+}
+section.cus_pos_l_9 {
+  --pos-left: 9%;
+}
+section.cus_pos_l_10 {
+  --pos-left: 10%;
+}
+section.cus_pos_l_11 {
+  --pos-left: 11%;
+}
+section.cus_pos_l_12 {
+  --pos-left: 12%;
+}
+section.cus_pos_l_13 {
+  --pos-left: 13%;
+}
+section.cus_pos_l_14 {
+  --pos-left: 14%;
+}
+section.cus_pos_l_15 {
+  --pos-left: 15%;
+}
+section.cus_pos_l_16 {
+  --pos-left: 16%;
+}
+section.cus_pos_l_17 {
+  --pos-left: 17%;
+}
+section.cus_pos_l_18 {
+  --pos-left: 18%;
+}
+section.cus_pos_l_19 {
+  --pos-left: 19%;
+}
+section.cus_pos_l_20 {
+  --pos-left: 20%;
+}
+section.cus_pos_l_21 {
+  --pos-left: 21%;
+}
+section.cus_pos_l_22 {
+  --pos-left: 22%;
+}
+section.cus_pos_l_23 {
+  --pos-left: 23%;
+}
+section.cus_pos_l_24 {
+  --pos-left: 24%;
+}
+section.cus_pos_l_25 {
+  --pos-left: 25%;
+}
+section.cus_pos_l_26 {
+  --pos-left: 26%;
+}
+section.cus_pos_l_27 {
+  --pos-left: 27%;
+}
+section.cus_pos_l_28 {
+  --pos-left: 28%;
+}
+section.cus_pos_l_29 {
+  --pos-left: 29%;
+}
+section.cus_pos_l_30 {
+  --pos-left: 30%;
+}
+section.cus_pos_l_31 {
+  --pos-left: 31%;
+}
+section.cus_pos_l_32 {
+  --pos-left: 32%;
+}
+section.cus_pos_l_33 {
+  --pos-left: 33%;
+}
+section.cus_pos_l_34 {
+  --pos-left: 34%;
+}
+section.cus_pos_l_35 {
+  --pos-left: 35%;
+}
+section.cus_pos_l_36 {
+  --pos-left: 36%;
+}
+section.cus_pos_l_37 {
+  --pos-left: 37%;
+}
+section.cus_pos_l_38 {
+  --pos-left: 38%;
+}
+section.cus_pos_l_39 {
+  --pos-left: 39%;
+}
+section.cus_pos_l_40 {
+  --pos-left: 40%;
+}
+section.cus_pos_l_30 {
+  --pos-left: 30%;
+}
+section.cus_pos_l_31 {
+  --pos-left: 31%;
+}
+section.cus_pos_l_32 {
+  --pos-left: 32%;
+}
+section.cus_pos_l_33 {
+  --pos-left: 33%;
+}
+section.cus_pos_l_34 {
+  --pos-left: 34%;
+}
+section.cus_pos_l_35 {
+  --pos-left: 35%;
+}
+section.cus_pos_l_36 {
+  --pos-left: 36%;
+}
+section.cus_pos_l_37 {
+  --pos-left: 37%;
+}
+section.cus_pos_l_38 {
+  --pos-left: 38%;
+}
+section.cus_pos_l_39 {
+  --pos-left: 39%;
+}
+section.cus_pos_l_40 {
+  --pos-left: 40%;
+}
+section.cus_pos_l_41 {
+  --pos-left: 41%;
+}
+section.cus_pos_l_42 {
+  --pos-left: 42%;
+}
+section.cus_pos_l_43 {
+  --pos-left: 43%;
+}
+section.cus_pos_l_44 {
+  --pos-left: 44%;
+}
+section.cus_pos_l_45 {
+  --pos-left: 45%;
+}
+section.cus_pos_l_46 {
+  --pos-left: 46%;
+}
+section.cus_pos_l_47 {
+  --pos-left: 47%;
+}
+section.cus_pos_l_48 {
+  --pos-left: 48%;
+}
+section.cus_pos_l_49 {
+  --pos-left: 49%;
+}
+section.cus_pos_l_50 {
+  --pos-left: 50%;
+}
+section.cus_pos_l_51 {
+  --pos-left: 51%;
+}
+section.cus_pos_l_52 {
+  --pos-left: 52%;
+}
+section.cus_pos_l_53 {
+  --pos-left: 53%;
+}
+section.cus_pos_l_54 {
+  --pos-left: 54%;
+}
+section.cus_pos_l_55 {
+  --pos-left: 55%;
+}
+section.cus_pos_l_56 {
+  --pos-left: 56%;
+}
+section.cus_pos_l_57 {
+  --pos-left: 57%;
+}
+section.cus_pos_l_58 {
+  --pos-left: 58%;
+}
+section.cus_pos_l_59 {
+  --pos-left: 59%;
+}
+section.cus_pos_l_60 {
+  --pos-left: 60%;
+}
+section.cus_pos_l_61 {
+  --pos-left: 61%;
+}
+section.cus_pos_l_62 {
+  --pos-left: 62%;
+}
+section.cus_pos_l_63 {
+  --pos-left: 63%;
+}
+section.cus_pos_l_64 {
+  --pos-left: 64%;
+}
+section.cus_pos_l_65 {
+  --pos-left: 65%;
+}
+section.cus_pos_l_66 {
+  --pos-left: 66%;
+}
+section.cus_pos_l_67 {
+  --pos-left: 67%;
+}
+section.cus_pos_l_68 {
+  --pos-left: 68%;
+}
+section.cus_pos_l_69 {
+  --pos-left: 69%;
+}
+section.cus_pos_l_70 {
+  --pos-left: 70%;
+}
+section.cus_pos_l_71 {
+  --pos-left: 71%;
+}
+section.cus_pos_l_72 {
+  --pos-left: 72%;
+}
+section.cus_pos_l_73 {
+  --pos-left: 73%;
+}
+section.cus_pos_l_74 {
+  --pos-left: 74%;
+}
+section.cus_pos_l_75 {
+  --pos-left: 75%;
+}
+section.cus_pos_l_76 {
+  --pos-left: 76%;
+}
+section.cus_pos_l_77 {
+  --pos-left: 77%;
+}
+section.cus_pos_l_78 {
+  --pos-left: 78%;
+}
+section.cus_pos_l_79 {
+  --pos-left: 79%;
+}
+section.cus_pos_l_80 {
+  --pos-left: 80%;
+}
+section.cus_pos_l_81 {
+  --pos-left: 81%;
+}
+section.cus_pos_l_82 {
+  --pos-left: 82%;
+}
+section.cus_pos_l_83 {
+  --pos-left: 83%;
+}
+section.cus_pos_l_84 {
+  --pos-left: 84%;
+}
+section.cus_pos_l_85 {
+  --pos-left: 85%;
+}
+section.cus_pos_l_86 {
+  --pos-left: 86%;
+}
+section.cus_pos_l_87 {
+  --pos-left: 87%;
+}
+section.cus_pos_l_88 {
+  --pos-left: 88%;
+}
+section.cus_pos_l_89 {
+  --pos-left: 89%;
+}
+section.cus_pos_l_90 {
+  --pos-left: 90%;
+}
+section.cus_pos_l_91 {
+  --pos-left: 91%;
+}
+section.cus_pos_l_92 {
+  --pos-left: 92%;
+}
+section.cus_pos_l_93 {
+  --pos-left: 93%;
+}
+section.cus_pos_l_94 {
+  --pos-left: 94%;
+}
+section.cus_pos_l_95 {
+  --pos-left: 95%;
+}
+section.cus_pos_l_96 {
+  --pos-left: 96%;
+}
+section.cus_pos_l_97 {
+  --pos-left: 97%;
+}
+section.cus_pos_l_98 {
+  --pos-left: 98%;
+}
+section.cus_pos_l_99 {
+  --pos-left: 99%;
+}
+section.cus_pos_l_100 {
+  --pos-left: 100%;
+}
+
+/* custom position top  */
+section.cus_pos_top_h1 h1,
+section.cus_pos_top_h2 h2,
+section.cus_pos_top_h3 h3,
+section.cus_pos_top_h1-2 h1,
+section.cus_pos_top_h1-2 h2,
+section.cus_pos_top_h1-3 h1,
+section.cus_pos_top_h1-3 h2,
+section.cus_pos_top_h1-3 h3 {
+  color: var(--headline-color);
+  position: absolute;
+  top: 16px;
+  left: 32px;
+  right: 40px;
+  padding-top: 12px;
+  padding-left: 16px;
+  padding-bottom: 6px;
+  margin-left: 0px;
+  border-left: solid 15px var(--headline-bgr-left-color);
+  border-bottom: solid 5px var(--headline-bgr-bottom-color);
+  font-weight: bold;
+}
+
+/* custom headline gradation */
+section.cus_grad_h1 h1,
+section.cus_grad_h2 h2,
+section.cus_grad_h3 h3,
+section.cus_grad_h4 h4,
+section.cus_grad_h5 h5,
+section.cus_grad_h6 h6,
+section.cus_grad_h1-2 h1,
+section.cus_grad_h1-2 h2,
+section.cus_grad_h1-3 h1,
+section.cus_grad_h1-3 h2,
+section.cus_grad_h1-3 h3,
+section.cus_grad_h1-4 h1,
+section.cus_grad_h1-4 h2,
+section.cus_grad_h1-4 h3,
+section.cus_grad_h1-4 h4,
+section.cus_grad_h1-5 h1,
+section.cus_grad_h1-5 h2,
+section.cus_grad_h1-5 h3,
+section.cus_grad_h1-5 h4,
+section.cus_grad_h1-5 h5,
+section.cus_grad_h1-6 h1,
+section.cus_grad_h1-6 h2,
+section.cus_grad_h1-6 h3,
+section.cus_grad_h1-6 h4,
+section.cus_grad_h1-6 h5,
+section.cus_grad_h1-6 h6 {
+  background: linear-gradient(
+    to right,
+    var(--grad-1-bg-color),
+    var(--grad-2-bg-color)
+  );
+}
+
+/* custom font-size 10px-60px */
+section.cus_fs_h1_10 h1,
+section.cus_fs_h2_10 h2,
+section.cus_fs_h3_10 h3,
+section.cus_fs_h4_10 h4,
+section.cus_fs_h5_10 h5,
+section.cus_fs_h6_10 h6,
+section.cus_fs_p_10 p,
+section.cus_fs_a_10 a,
+section.cus_fs_li_10 li,
+section.cus_fs_ul_10 ul,
+section.cus_fs_ol_10 ol,
+section.cus_fs_dl_10 dl,
+section.cus_fs_dt_10 dt,
+section.cus_fs_dd_10 dd,
+section.cus_fs_code_10 code,
+section.cus_fs_table_10 table,
+section.cus_fs_tr_10 tr,
+section.cus_fs_th_10 th,
+section.cus_fs_td_10 td {
+  font-size: 10px;
+}
+section.cus_fs_h1_11 h1,
+section.cus_fs_h2_11 h2,
+section.cus_fs_h3_11 h3,
+section.cus_fs_h4_11 h4,
+section.cus_fs_h5_11 h5,
+section.cus_fs_h6_11 h6,
+section.cus_fs_p_11 p,
+section.cus_fs_a_11 a,
+section.cus_fs_li_11 li,
+section.cus_fs_ul_11 ul,
+section.cus_fs_ol_11 ol,
+section.cus_fs_dl_11 dl,
+section.cus_fs_dt_11 dt,
+section.cus_fs_dd_11 dd,
+section.cus_fs_code_11 code,
+section.cus_fs_table_11 table,
+section.cus_fs_tr_11 tr,
+section.cus_fs_th_11 th,
+section.cus_fs_td_11 td {
+  font-size: 11px;
+}
+section.cus_fs_h1_12 h1,
+section.cus_fs_h2_12 h2,
+section.cus_fs_h3_12 h3,
+section.cus_fs_h4_12 h4,
+section.cus_fs_h5_12 h5,
+section.cus_fs_h6_12 h6,
+section.cus_fs_p_12 p,
+section.cus_fs_a_12 a,
+section.cus_fs_li_12 li,
+section.cus_fs_ul_12 ul,
+section.cus_fs_ol_12 ol,
+section.cus_fs_dl_12 dl,
+section.cus_fs_dt_12 dt,
+section.cus_fs_dd_12 dd,
+section.cus_fs_code_12 code,
+section.cus_fs_table_12 table,
+section.cus_fs_tr_12 tr,
+section.cus_fs_th_12 th,
+section.cus_fs_td_12 td {
+  font-size: 12px;
+}
+section.cus_fs_h1_13 h1,
+section.cus_fs_h2_13 h2,
+section.cus_fs_h3_13 h3,
+section.cus_fs_h4_13 h4,
+section.cus_fs_h5_13 h5,
+section.cus_fs_h6_13 h6,
+section.cus_fs_p_13 p,
+section.cus_fs_a_13 a,
+section.cus_fs_li_13 li,
+section.cus_fs_ul_13 ul,
+section.cus_fs_ol_13 ol,
+section.cus_fs_dl_13 dl,
+section.cus_fs_dt_13 dt,
+section.cus_fs_dd_13 dd,
+section.cus_fs_code_13 code,
+section.cus_fs_table_13 table,
+section.cus_fs_tr_13 tr,
+section.cus_fs_th_13 th,
+section.cus_fs_td_13 td {
+  font-size: 13px;
+}
+section.cus_fs_h1_14 h1,
+section.cus_fs_h2_14 h2,
+section.cus_fs_h3_14 h3,
+section.cus_fs_h4_14 h4,
+section.cus_fs_h5_14 h5,
+section.cus_fs_h6_14 h6,
+section.cus_fs_p_14 p,
+section.cus_fs_a_14 a,
+section.cus_fs_li_14 li,
+section.cus_fs_ul_14 ul,
+section.cus_fs_ol_14 ol,
+section.cus_fs_dl_14 dl,
+section.cus_fs_dt_14 dt,
+section.cus_fs_dd_14 dd,
+section.cus_fs_code_14 code,
+section.cus_fs_table_14 table,
+section.cus_fs_tr_14 tr,
+section.cus_fs_th_14 th,
+section.cus_fs_td_14 td {
+  font-size: 14px;
+}
+section.cus_fs_h1_15 h1,
+section.cus_fs_h2_15 h2,
+section.cus_fs_h3_15 h3,
+section.cus_fs_h4_15 h4,
+section.cus_fs_h5_15 h5,
+section.cus_fs_h6_15 h6,
+section.cus_fs_p_15 p,
+section.cus_fs_a_15 a,
+section.cus_fs_li_15 li,
+section.cus_fs_ul_15 ul,
+section.cus_fs_ol_15 ol,
+section.cus_fs_dl_15 dl,
+section.cus_fs_dt_15 dt,
+section.cus_fs_dd_15 dd,
+section.cus_fs_code_15 code,
+section.cus_fs_table_15 table,
+section.cus_fs_tr_15 tr,
+section.cus_fs_th_15 th,
+section.cus_fs_td_15 td {
+  font-size: 15px;
+}
+section.cus_fs_h1_16 h1,
+section.cus_fs_h2_16 h2,
+section.cus_fs_h3_16 h3,
+section.cus_fs_h4_16 h4,
+section.cus_fs_h5_16 h5,
+section.cus_fs_h6_16 h6,
+section.cus_fs_p_16 p,
+section.cus_fs_a_16 a,
+section.cus_fs_li_16 li,
+section.cus_fs_ul_16 ul,
+section.cus_fs_ol_16 ol,
+section.cus_fs_dl_16 dl,
+section.cus_fs_dt_16 dt,
+section.cus_fs_dd_16 dd,
+section.cus_fs_code_16 code,
+section.cus_fs_table_16 table,
+section.cus_fs_tr_16 tr,
+section.cus_fs_th_16 th,
+section.cus_fs_td_16 td {
+  font-size: 16px;
+}
+section.cus_fs_h1_17 h1,
+section.cus_fs_h2_17 h2,
+section.cus_fs_h3_17 h3,
+section.cus_fs_h4_17 h4,
+section.cus_fs_h5_17 h5,
+section.cus_fs_h6_17 h6,
+section.cus_fs_p_17 p,
+section.cus_fs_a_17 a,
+section.cus_fs_li_17 li,
+section.cus_fs_ul_17 ul,
+section.cus_fs_ol_17 ol,
+section.cus_fs_dl_17 dl,
+section.cus_fs_dt_17 dt,
+section.cus_fs_dd_17 dd,
+section.cus_fs_code_17 code,
+section.cus_fs_table_17 table,
+section.cus_fs_tr_17 tr,
+section.cus_fs_th_17 th,
+section.cus_fs_td_17 td {
+  font-size: 17px;
+}
+section.cus_fs_h1_18 h1,
+section.cus_fs_h2_18 h2,
+section.cus_fs_h3_18 h3,
+section.cus_fs_h4_18 h4,
+section.cus_fs_h5_18 h5,
+section.cus_fs_h6_18 h6,
+section.cus_fs_p_18 p,
+section.cus_fs_a_18 a,
+section.cus_fs_li_18 li,
+section.cus_fs_ul_18 ul,
+section.cus_fs_ol_18 ol,
+section.cus_fs_dl_18 dl,
+section.cus_fs_dt_18 dt,
+section.cus_fs_dd_18 dd,
+section.cus_fs_code_18 code,
+section.cus_fs_table_18 table,
+section.cus_fs_tr_18 tr,
+section.cus_fs_th_18 th,
+section.cus_fs_td_18 td {
+  font-size: 18px;
+}
+section.cus_fs_h1_19 h1,
+section.cus_fs_h2_19 h2,
+section.cus_fs_h3_19 h3,
+section.cus_fs_h4_19 h4,
+section.cus_fs_h5_19 h5,
+section.cus_fs_h6_19 h6,
+section.cus_fs_p_19 p,
+section.cus_fs_a_19 a,
+section.cus_fs_li_19 li,
+section.cus_fs_ul_19 ul,
+section.cus_fs_ol_19 ol,
+section.cus_fs_dl_19 dl,
+section.cus_fs_dt_19 dt,
+section.cus_fs_dd_19 dd,
+section.cus_fs_code_19 code,
+section.cus_fs_table_19 table,
+section.cus_fs_tr_19 tr,
+section.cus_fs_th_19 th,
+section.cus_fs_td_19 td {
+  font-size: 19px;
+}
+section.cus_fs_h1_20 h1,
+section.cus_fs_h2_20 h2,
+section.cus_fs_h3_20 h3,
+section.cus_fs_h4_20 h4,
+section.cus_fs_h5_20 h5,
+section.cus_fs_h6_20 h6,
+section.cus_fs_p_20 p,
+section.cus_fs_a_20 a,
+section.cus_fs_li_20 li,
+section.cus_fs_ul_20 ul,
+section.cus_fs_ol_20 ol,
+section.cus_fs_dl_20 dl,
+section.cus_fs_dt_20 dt,
+section.cus_fs_dd_20 dd,
+section.cus_fs_code_20 code,
+section.cus_fs_table_20 table,
+section.cus_fs_tr_20 tr,
+section.cus_fs_th_20 th,
+section.cus_fs_td_20 td {
+  font-size: 20px;
+}
+section.cus_fs_h1_21 h1,
+section.cus_fs_h2_21 h2,
+section.cus_fs_h3_21 h3,
+section.cus_fs_h4_21 h4,
+section.cus_fs_h5_21 h5,
+section.cus_fs_h6_21 h6,
+section.cus_fs_p_21 p,
+section.cus_fs_a_21 a,
+section.cus_fs_li_21 li,
+section.cus_fs_ul_21 ul,
+section.cus_fs_ol_21 ol,
+section.cus_fs_dl_21 dl,
+section.cus_fs_dt_21 dt,
+section.cus_fs_dd_21 dd,
+section.cus_fs_code_21 code,
+section.cus_fs_table_21 table,
+section.cus_fs_tr_21 tr,
+section.cus_fs_th_21 th,
+section.cus_fs_td_21 td {
+  font-size: 21px;
+}
+section.cus_fs_h1_22 h1,
+section.cus_fs_h2_22 h2,
+section.cus_fs_h3_22 h3,
+section.cus_fs_h4_22 h4,
+section.cus_fs_h5_22 h5,
+section.cus_fs_h6_22 h6,
+section.cus_fs_p_22 p,
+section.cus_fs_a_22 a,
+section.cus_fs_li_22 li,
+section.cus_fs_ul_22 ul,
+section.cus_fs_ol_22 ol,
+section.cus_fs_dl_22 dl,
+section.cus_fs_dt_22 dt,
+section.cus_fs_dd_22 dd,
+section.cus_fs_code_22 code,
+section.cus_fs_table_22 table,
+section.cus_fs_tr_22 tr,
+section.cus_fs_th_22 th,
+section.cus_fs_td_22 td {
+  font-size: 22px;
+}
+section.cus_fs_h1_23 h1,
+section.cus_fs_h2_23 h2,
+section.cus_fs_h3_23 h3,
+section.cus_fs_h4_23 h4,
+section.cus_fs_h5_23 h5,
+section.cus_fs_h6_23 h6,
+section.cus_fs_p_23 p,
+section.cus_fs_a_23 a,
+section.cus_fs_li_23 li,
+section.cus_fs_ul_23 ul,
+section.cus_fs_ol_23 ol,
+section.cus_fs_dl_23 dl,
+section.cus_fs_dt_23 dt,
+section.cus_fs_dd_23 dd,
+section.cus_fs_code_23 code,
+section.cus_fs_table_23 table,
+section.cus_fs_tr_23 tr,
+section.cus_fs_th_23 th,
+section.cus_fs_td_23 td {
+  font-size: 23px;
+}
+section.cus_fs_h1_24 h1,
+section.cus_fs_h2_24 h2,
+section.cus_fs_h3_24 h3,
+section.cus_fs_h4_24 h4,
+section.cus_fs_h5_24 h5,
+section.cus_fs_h6_24 h6,
+section.cus_fs_p_24 p,
+section.cus_fs_a_24 a,
+section.cus_fs_li_24 li,
+section.cus_fs_ul_24 ul,
+section.cus_fs_ol_24 ol,
+section.cus_fs_dl_24 dl,
+section.cus_fs_dt_24 dt,
+section.cus_fs_dd_24 dd,
+section.cus_fs_code_24 code,
+section.cus_fs_table_24 table,
+section.cus_fs_tr_24 tr,
+section.cus_fs_th_24 th,
+section.cus_fs_td_24 td {
+  font-size: 24px;
+}
+section.cus_fs_h1_25 h1,
+section.cus_fs_h2_25 h2,
+section.cus_fs_h3_25 h3,
+section.cus_fs_h4_25 h4,
+section.cus_fs_h5_25 h5,
+section.cus_fs_h6_25 h6,
+section.cus_fs_p_25 p,
+section.cus_fs_a_25 a,
+section.cus_fs_li_25 li,
+section.cus_fs_ul_25 ul,
+section.cus_fs_ol_25 ol,
+section.cus_fs_dl_25 dl,
+section.cus_fs_dt_25 dt,
+section.cus_fs_dd_25 dd,
+section.cus_fs_code_25 code,
+section.cus_fs_table_25 table,
+section.cus_fs_tr_25 tr,
+section.cus_fs_th_25 th,
+section.cus_fs_td_25 td {
+  font-size: 25px;
+}
+section.cus_fs_h1_26 h1,
+section.cus_fs_h2_26 h2,
+section.cus_fs_h3_26 h3,
+section.cus_fs_h4_26 h4,
+section.cus_fs_h5_26 h5,
+section.cus_fs_h6_26 h6,
+section.cus_fs_p_26 p,
+section.cus_fs_a_26 a,
+section.cus_fs_li_26 li,
+section.cus_fs_ul_26 ul,
+section.cus_fs_ol_26 ol,
+section.cus_fs_dl_26 dl,
+section.cus_fs_dt_26 dt,
+section.cus_fs_dd_26 dd,
+section.cus_fs_code_26 code,
+section.cus_fs_table_26 table,
+section.cus_fs_tr_26 tr,
+section.cus_fs_th_26 th,
+section.cus_fs_td_26 td {
+  font-size: 26px;
+}
+section.cus_fs_h1_27 h1,
+section.cus_fs_h2_27 h2,
+section.cus_fs_h3_27 h3,
+section.cus_fs_h4_27 h4,
+section.cus_fs_h5_27 h5,
+section.cus_fs_h6_27 h6,
+section.cus_fs_p_27 p,
+section.cus_fs_a_27 a,
+section.cus_fs_li_27 li,
+section.cus_fs_ul_27 ul,
+section.cus_fs_ol_27 ol,
+section.cus_fs_dl_27 dl,
+section.cus_fs_dt_27 dt,
+section.cus_fs_dd_27 dd,
+section.cus_fs_code_27 code,
+section.cus_fs_table_27 table,
+section.cus_fs_tr_27 tr,
+section.cus_fs_th_27 th,
+section.cus_fs_td_27 td {
+  font-size: 27px;
+}
+section.cus_fs_h1_28 h1,
+section.cus_fs_h2_28 h2,
+section.cus_fs_h3_28 h3,
+section.cus_fs_h4_28 h4,
+section.cus_fs_h5_28 h5,
+section.cus_fs_h6_28 h6,
+section.cus_fs_p_28 p,
+section.cus_fs_a_28 a,
+section.cus_fs_li_28 li,
+section.cus_fs_ul_28 ul,
+section.cus_fs_ol_28 ol,
+section.cus_fs_dl_28 dl,
+section.cus_fs_dt_28 dt,
+section.cus_fs_dd_28 dd,
+section.cus_fs_code_28 code,
+section.cus_fs_table_28 table,
+section.cus_fs_tr_28 tr,
+section.cus_fs_th_28 th,
+section.cus_fs_td_28 td {
+  font-size: 28px;
+}
+section.cus_fs_h1_29 h1,
+section.cus_fs_h2_29 h2,
+section.cus_fs_h3_29 h3,
+section.cus_fs_h4_29 h4,
+section.cus_fs_h5_29 h5,
+section.cus_fs_h6_29 h6,
+section.cus_fs_p_29 p,
+section.cus_fs_a_29 a,
+section.cus_fs_li_29 li,
+section.cus_fs_ul_29 ul,
+section.cus_fs_ol_29 ol,
+section.cus_fs_dl_29 dl,
+section.cus_fs_dt_29 dt,
+section.cus_fs_dd_29 dd,
+section.cus_fs_code_29 code,
+section.cus_fs_table_29 table,
+section.cus_fs_tr_29 tr,
+section.cus_fs_th_29 th,
+section.cus_fs_td_29 td {
+  font-size: 29px;
+}
+section.cus_fs_h1_30 h1,
+section.cus_fs_h2_30 h2,
+section.cus_fs_h3_30 h3,
+section.cus_fs_h4_30 h4,
+section.cus_fs_h5_30 h5,
+section.cus_fs_h6_30 h6,
+section.cus_fs_p_30 p,
+section.cus_fs_a_30 a,
+section.cus_fs_li_30 li,
+section.cus_fs_ul_30 ul,
+section.cus_fs_ol_30 ol,
+section.cus_fs_dl_30 dl,
+section.cus_fs_dt_30 dt,
+section.cus_fs_dd_30 dd,
+section.cus_fs_code_30 code,
+section.cus_fs_table_30 table,
+section.cus_fs_tr_30 tr,
+section.cus_fs_th_30 th,
+section.cus_fs_td_30 td {
+  font-size: 30px;
+}
+section.cus_fs_h1_31 h1,
+section.cus_fs_h2_31 h2,
+section.cus_fs_h3_31 h3,
+section.cus_fs_h4_31 h4,
+section.cus_fs_h5_31 h5,
+section.cus_fs_h6_31 h6,
+section.cus_fs_p_31 p,
+section.cus_fs_a_31 a,
+section.cus_fs_li_31 li,
+section.cus_fs_ul_31 ul,
+section.cus_fs_ol_31 ol,
+section.cus_fs_dl_31 dl,
+section.cus_fs_dt_31 dt,
+section.cus_fs_dd_31 dd,
+section.cus_fs_code_31 code,
+section.cus_fs_table_31 table,
+section.cus_fs_tr_31 tr,
+section.cus_fs_th_31 th,
+section.cus_fs_td_31 td {
+  font-size: 31px;
+}
+section.cus_fs_h1_32 h1,
+section.cus_fs_h2_32 h2,
+section.cus_fs_h3_32 h3,
+section.cus_fs_h4_32 h4,
+section.cus_fs_h5_32 h5,
+section.cus_fs_h6_32 h6,
+section.cus_fs_p_32 p,
+section.cus_fs_a_32 a,
+section.cus_fs_li_32 li,
+section.cus_fs_ul_32 ul,
+section.cus_fs_ol_32 ol,
+section.cus_fs_dl_32 dl,
+section.cus_fs_dt_32 dt,
+section.cus_fs_dd_32 dd,
+section.cus_fs_code_32 code,
+section.cus_fs_table_32 table,
+section.cus_fs_tr_32 tr,
+section.cus_fs_th_32 th,
+section.cus_fs_td_32 td {
+  font-size: 32px;
+}
+section.cus_fs_h1_33 h1,
+section.cus_fs_h2_33 h2,
+section.cus_fs_h3_33 h3,
+section.cus_fs_h4_33 h4,
+section.cus_fs_h5_33 h5,
+section.cus_fs_h6_33 h6,
+section.cus_fs_p_33 p,
+section.cus_fs_a_33 a,
+section.cus_fs_li_33 li,
+section.cus_fs_ul_33 ul,
+section.cus_fs_ol_33 ol,
+section.cus_fs_dl_33 dl,
+section.cus_fs_dt_33 dt,
+section.cus_fs_dd_33 dd,
+section.cus_fs_code_33 code,
+section.cus_fs_table_33 table,
+section.cus_fs_tr_33 tr,
+section.cus_fs_th_33 th,
+section.cus_fs_td_33 td {
+  font-size: 33px;
+}
+section.cus_fs_h1_34 h1,
+section.cus_fs_h2_34 h2,
+section.cus_fs_h3_34 h3,
+section.cus_fs_h4_34 h4,
+section.cus_fs_h5_34 h5,
+section.cus_fs_h6_34 h6,
+section.cus_fs_p_34 p,
+section.cus_fs_a_34 a,
+section.cus_fs_li_34 li,
+section.cus_fs_ul_34 ul,
+section.cus_fs_ol_34 ol,
+section.cus_fs_dl_34 dl,
+section.cus_fs_dt_34 dt,
+section.cus_fs_dd_34 dd,
+section.cus_fs_code_34 code,
+section.cus_fs_table_34 table,
+section.cus_fs_tr_34 tr,
+section.cus_fs_th_34 th,
+section.cus_fs_td_34 td {
+  font-size: 34px;
+}
+section.cus_fs_h1_35 h1,
+section.cus_fs_h2_35 h2,
+section.cus_fs_h3_35 h3,
+section.cus_fs_h4_35 h4,
+section.cus_fs_h5_35 h5,
+section.cus_fs_h6_35 h6,
+section.cus_fs_p_35 p,
+section.cus_fs_a_35 a,
+section.cus_fs_li_35 li,
+section.cus_fs_ul_35 ul,
+section.cus_fs_ol_35 ol,
+section.cus_fs_dl_35 dl,
+section.cus_fs_dt_35 dt,
+section.cus_fs_dd_35 dd,
+section.cus_fs_code_35 code,
+section.cus_fs_table_35 table,
+section.cus_fs_tr_35 tr,
+section.cus_fs_th_35 th,
+section.cus_fs_td_35 td {
+  font-size: 35px;
+}
+section.cus_fs_h1_36 h1,
+section.cus_fs_h2_36 h2,
+section.cus_fs_h3_36 h3,
+section.cus_fs_h4_36 h4,
+section.cus_fs_h5_36 h5,
+section.cus_fs_h6_36 h6,
+section.cus_fs_p_36 p,
+section.cus_fs_a_36 a,
+section.cus_fs_li_36 li,
+section.cus_fs_ul_36 ul,
+section.cus_fs_ol_36 ol,
+section.cus_fs_dl_36 dl,
+section.cus_fs_dt_36 dt,
+section.cus_fs_dd_36 dd,
+section.cus_fs_code_36 code,
+section.cus_fs_table_36 table,
+section.cus_fs_tr_36 tr,
+section.cus_fs_th_36 th,
+section.cus_fs_td_36 td {
+  font-size: 36px;
+}
+section.cus_fs_h1_37 h1,
+section.cus_fs_h2_37 h2,
+section.cus_fs_h3_37 h3,
+section.cus_fs_h4_37 h4,
+section.cus_fs_h5_37 h5,
+section.cus_fs_h6_37 h6,
+section.cus_fs_p_37 p,
+section.cus_fs_a_37 a,
+section.cus_fs_li_37 li,
+section.cus_fs_ul_37 ul,
+section.cus_fs_ol_37 ol,
+section.cus_fs_dl_37 dl,
+section.cus_fs_dt_37 dt,
+section.cus_fs_dd_37 dd,
+section.cus_fs_code_37 code,
+section.cus_fs_table_37 table,
+section.cus_fs_tr_37 tr,
+section.cus_fs_th_37 th,
+section.cus_fs_td_37 td {
+  font-size: 37px;
+}
+section.cus_fs_h1_38 h1,
+section.cus_fs_h2_38 h2,
+section.cus_fs_h3_38 h3,
+section.cus_fs_h4_38 h4,
+section.cus_fs_h5_38 h5,
+section.cus_fs_h6_38 h6,
+section.cus_fs_p_38 p,
+section.cus_fs_a_38 a,
+section.cus_fs_li_38 li,
+section.cus_fs_ul_38 ul,
+section.cus_fs_ol_38 ol,
+section.cus_fs_dl_38 dl,
+section.cus_fs_dt_38 dt,
+section.cus_fs_dd_38 dd,
+section.cus_fs_code_38 code,
+section.cus_fs_table_38 table,
+section.cus_fs_tr_38 tr,
+section.cus_fs_th_38 th,
+section.cus_fs_td_38 td {
+  font-size: 38px;
+}
+section.cus_fs_h1_39 h1,
+section.cus_fs_h2_39 h2,
+section.cus_fs_h3_39 h3,
+section.cus_fs_h4_39 h4,
+section.cus_fs_h5_39 h5,
+section.cus_fs_h6_39 h6,
+section.cus_fs_p_39 p,
+section.cus_fs_a_39 a,
+section.cus_fs_li_39 li,
+section.cus_fs_ul_39 ul,
+section.cus_fs_ol_39 ol,
+section.cus_fs_dl_39 dl,
+section.cus_fs_dt_39 dt,
+section.cus_fs_dd_39 dd,
+section.cus_fs_code_39 code,
+section.cus_fs_table_39 table,
+section.cus_fs_tr_39 tr,
+section.cus_fs_th_39 th,
+section.cus_fs_td_39 td {
+  font-size: 39px;
+}
+section.cus_fs_h1_40 h1,
+section.cus_fs_h2_40 h2,
+section.cus_fs_h3_40 h3,
+section.cus_fs_h4_40 h4,
+section.cus_fs_h5_40 h5,
+section.cus_fs_h6_40 h6,
+section.cus_fs_p_40 p,
+section.cus_fs_a_40 a,
+section.cus_fs_li_40 li,
+section.cus_fs_ul_40 ul,
+section.cus_fs_ol_40 ol,
+section.cus_fs_dl_40 dl,
+section.cus_fs_dt_40 dt,
+section.cus_fs_dd_40 dd,
+section.cus_fs_code_40 code,
+section.cus_fs_table_40 table,
+section.cus_fs_tr_40 tr,
+section.cus_fs_th_40 th,
+section.cus_fs_td_40 td {
+  font-size: 40px;
+}
+section.cus_fs_h1_41 h1,
+section.cus_fs_h2_41 h2,
+section.cus_fs_h3_41 h3,
+section.cus_fs_h4_41 h4,
+section.cus_fs_h5_41 h5,
+section.cus_fs_h6_41 h6,
+section.cus_fs_p_41 p,
+section.cus_fs_a_41 a,
+section.cus_fs_li_41 li,
+section.cus_fs_ul_41 ul,
+section.cus_fs_ol_41 ol,
+section.cus_fs_dl_41 dl,
+section.cus_fs_dt_41 dt,
+section.cus_fs_dd_41 dd,
+section.cus_fs_code_41 code,
+section.cus_fs_table_41 table,
+section.cus_fs_tr_41 tr,
+section.cus_fs_th_41 th,
+section.cus_fs_td_41 td {
+  font-size: 41px;
+}
+section.cus_fs_h1_42 h1,
+section.cus_fs_h2_42 h2,
+section.cus_fs_h3_42 h3,
+section.cus_fs_h4_42 h4,
+section.cus_fs_h5_42 h5,
+section.cus_fs_h6_42 h6,
+section.cus_fs_p_42 p,
+section.cus_fs_a_42 a,
+section.cus_fs_li_42 li,
+section.cus_fs_ul_42 ul,
+section.cus_fs_ol_42 ol,
+section.cus_fs_dl_42 dl,
+section.cus_fs_dt_42 dt,
+section.cus_fs_dd_42 dd,
+section.cus_fs_code_42 code,
+section.cus_fs_table_42 table,
+section.cus_fs_tr_42 tr,
+section.cus_fs_th_42 th,
+section.cus_fs_td_42 td {
+  font-size: 42px;
+}
+section.cus_fs_h1_43 h1,
+section.cus_fs_h2_43 h2,
+section.cus_fs_h3_43 h3,
+section.cus_fs_h4_43 h4,
+section.cus_fs_h5_43 h5,
+section.cus_fs_h6_43 h6,
+section.cus_fs_p_43 p,
+section.cus_fs_a_43 a,
+section.cus_fs_li_43 li,
+section.cus_fs_ul_43 ul,
+section.cus_fs_ol_43 ol,
+section.cus_fs_dl_43 dl,
+section.cus_fs_dt_43 dt,
+section.cus_fs_dd_43 dd,
+section.cus_fs_code_43 code,
+section.cus_fs_table_43 table,
+section.cus_fs_tr_43 tr,
+section.cus_fs_th_43 th,
+section.cus_fs_td_43 td {
+  font-size: 43px;
+}
+section.cus_fs_h1_44 h1,
+section.cus_fs_h2_44 h2,
+section.cus_fs_h3_44 h3,
+section.cus_fs_h4_44 h4,
+section.cus_fs_h5_44 h5,
+section.cus_fs_h6_44 h6,
+section.cus_fs_p_44 p,
+section.cus_fs_a_44 a,
+section.cus_fs_li_44 li,
+section.cus_fs_ul_44 ul,
+section.cus_fs_ol_44 ol,
+section.cus_fs_dl_44 dl,
+section.cus_fs_dt_44 dt,
+section.cus_fs_dd_44 dd,
+section.cus_fs_code_44 code,
+section.cus_fs_table_44 table,
+section.cus_fs_tr_44 tr,
+section.cus_fs_th_44 th,
+section.cus_fs_td_44 td {
+  font-size: 44px;
+}
+section.cus_fs_h1_45 h1,
+section.cus_fs_h2_45 h2,
+section.cus_fs_h3_45 h3,
+section.cus_fs_h4_45 h4,
+section.cus_fs_h5_45 h5,
+section.cus_fs_h6_45 h6,
+section.cus_fs_p_45 p,
+section.cus_fs_a_45 a,
+section.cus_fs_li_45 li,
+section.cus_fs_ul_45 ul,
+section.cus_fs_ol_45 ol,
+section.cus_fs_dl_45 dl,
+section.cus_fs_dt_45 dt,
+section.cus_fs_dd_45 dd,
+section.cus_fs_code_45 code,
+section.cus_fs_table_45 table,
+section.cus_fs_tr_45 tr,
+section.cus_fs_th_45 th,
+section.cus_fs_td_45 td {
+  font-size: 45px;
+}
+section.cus_fs_h1_46 h1,
+section.cus_fs_h2_46 h2,
+section.cus_fs_h3_46 h3,
+section.cus_fs_h4_46 h4,
+section.cus_fs_h5_46 h5,
+section.cus_fs_h6_46 h6,
+section.cus_fs_p_46 p,
+section.cus_fs_a_46 a,
+section.cus_fs_li_46 li,
+section.cus_fs_ul_46 ul,
+section.cus_fs_ol_46 ol,
+section.cus_fs_dl_46 dl,
+section.cus_fs_dt_46 dt,
+section.cus_fs_dd_46 dd,
+section.cus_fs_code_46 code,
+section.cus_fs_table_46 table,
+section.cus_fs_tr_46 tr,
+section.cus_fs_th_46 th,
+section.cus_fs_td_46 td {
+  font-size: 46px;
+}
+section.cus_fs_h1_47 h1,
+section.cus_fs_h2_47 h2,
+section.cus_fs_h3_47 h3,
+section.cus_fs_h4_47 h4,
+section.cus_fs_h5_47 h5,
+section.cus_fs_h6_47 h6,
+section.cus_fs_p_47 p,
+section.cus_fs_a_47 a,
+section.cus_fs_li_47 li,
+section.cus_fs_ul_47 ul,
+section.cus_fs_ol_47 ol,
+section.cus_fs_dl_47 dl,
+section.cus_fs_dt_47 dt,
+section.cus_fs_dd_47 dd,
+section.cus_fs_code_47 code,
+section.cus_fs_table_47 table,
+section.cus_fs_tr_47 tr,
+section.cus_fs_th_47 th,
+section.cus_fs_td_47 td {
+  font-size: 47px;
+}
+section.cus_fs_h1_48 h1,
+section.cus_fs_h2_48 h2,
+section.cus_fs_h3_48 h3,
+section.cus_fs_h4_48 h4,
+section.cus_fs_h5_48 h5,
+section.cus_fs_h6_48 h6,
+section.cus_fs_p_48 p,
+section.cus_fs_a_48 a,
+section.cus_fs_li_48 li,
+section.cus_fs_ul_48 ul,
+section.cus_fs_ol_48 ol,
+section.cus_fs_dl_48 dl,
+section.cus_fs_dt_48 dt,
+section.cus_fs_dd_48 dd,
+section.cus_fs_code_48 code,
+section.cus_fs_table_48 table,
+section.cus_fs_tr_48 tr,
+section.cus_fs_th_48 th,
+section.cus_fs_td_48 td {
+  font-size: 48px;
+}
+section.cus_fs_h1_49 h1,
+section.cus_fs_h2_49 h2,
+section.cus_fs_h3_49 h3,
+section.cus_fs_h4_49 h4,
+section.cus_fs_h5_49 h5,
+section.cus_fs_h6_49 h6,
+section.cus_fs_p_49 p,
+section.cus_fs_a_49 a,
+section.cus_fs_li_49 li,
+section.cus_fs_ul_49 ul,
+section.cus_fs_ol_49 ol,
+section.cus_fs_dl_49 dl,
+section.cus_fs_dt_49 dt,
+section.cus_fs_dd_49 dd,
+section.cus_fs_code_49 code,
+section.cus_fs_table_49 table,
+section.cus_fs_tr_49 tr,
+section.cus_fs_th_49 th,
+section.cus_fs_td_49 td {
+  font-size: 49px;
+}
+section.cus_fs_h1_50 h1,
+section.cus_fs_h2_50 h2,
+section.cus_fs_h3_50 h3,
+section.cus_fs_h4_50 h4,
+section.cus_fs_h5_50 h5,
+section.cus_fs_h6_50 h6,
+section.cus_fs_p_50 p,
+section.cus_fs_a_50 a,
+section.cus_fs_li_50 li,
+section.cus_fs_ul_50 ul,
+section.cus_fs_ol_50 ol,
+section.cus_fs_dl_50 dl,
+section.cus_fs_dt_50 dt,
+section.cus_fs_dd_50 dd,
+section.cus_fs_code_50 code,
+section.cus_fs_table_50 table,
+section.cus_fs_tr_50 tr,
+section.cus_fs_th_50 th,
+section.cus_fs_td_50 td {
+  font-size: 50px;
+}
+section.cus_fs_h1_51 h1,
+section.cus_fs_h2_51 h2,
+section.cus_fs_h3_51 h3,
+section.cus_fs_h4_51 h4,
+section.cus_fs_h5_51 h5,
+section.cus_fs_h6_51 h6,
+section.cus_fs_p_51 p,
+section.cus_fs_a_51 a,
+section.cus_fs_li_51 li,
+section.cus_fs_ul_51 ul,
+section.cus_fs_ol_51 ol,
+section.cus_fs_dl_51 dl,
+section.cus_fs_dt_51 dt,
+section.cus_fs_dd_51 dd,
+section.cus_fs_code_51 code,
+section.cus_fs_table_51 table,
+section.cus_fs_tr_51 tr,
+section.cus_fs_th_51 th,
+section.cus_fs_td_51 td {
+  font-size: 51px;
+}
+section.cus_fs_h1_52 h1,
+section.cus_fs_h2_52 h2,
+section.cus_fs_h3_52 h3,
+section.cus_fs_h4_52 h4,
+section.cus_fs_h5_52 h5,
+section.cus_fs_h6_52 h6,
+section.cus_fs_p_52 p,
+section.cus_fs_a_52 a,
+section.cus_fs_li_52 li,
+section.cus_fs_ul_52 ul,
+section.cus_fs_ol_52 ol,
+section.cus_fs_dl_52 dl,
+section.cus_fs_dt_52 dt,
+section.cus_fs_dd_52 dd,
+section.cus_fs_code_52 code,
+section.cus_fs_table_52 table,
+section.cus_fs_tr_52 tr,
+section.cus_fs_th_52 th,
+section.cus_fs_td_52 td {
+  font-size: 52px;
+}
+section.cus_fs_h1_53 h1,
+section.cus_fs_h2_53 h2,
+section.cus_fs_h3_53 h3,
+section.cus_fs_h4_53 h4,
+section.cus_fs_h5_53 h5,
+section.cus_fs_h6_53 h6,
+section.cus_fs_p_53 p,
+section.cus_fs_a_53 a,
+section.cus_fs_li_53 li,
+section.cus_fs_ul_53 ul,
+section.cus_fs_ol_53 ol,
+section.cus_fs_dl_53 dl,
+section.cus_fs_dt_53 dt,
+section.cus_fs_dd_53 dd,
+section.cus_fs_code_53 code,
+section.cus_fs_table_53 table,
+section.cus_fs_tr_53 tr,
+section.cus_fs_th_53 th,
+section.cus_fs_td_53 td {
+  font-size: 53px;
+}
+section.cus_fs_h1_54 h1,
+section.cus_fs_h2_54 h2,
+section.cus_fs_h3_54 h3,
+section.cus_fs_h4_54 h4,
+section.cus_fs_h5_54 h5,
+section.cus_fs_h6_54 h6,
+section.cus_fs_p_54 p,
+section.cus_fs_a_54 a,
+section.cus_fs_li_54 li,
+section.cus_fs_ul_54 ul,
+section.cus_fs_ol_54 ol,
+section.cus_fs_dl_54 dl,
+section.cus_fs_dt_54 dt,
+section.cus_fs_dd_54 dd,
+section.cus_fs_code_54 code,
+section.cus_fs_table_54 table,
+section.cus_fs_tr_54 tr,
+section.cus_fs_th_54 th,
+section.cus_fs_td_54 td {
+  font-size: 54px;
+}
+section.cus_fs_h1_55 h1,
+section.cus_fs_h2_55 h2,
+section.cus_fs_h3_55 h3,
+section.cus_fs_h4_55 h4,
+section.cus_fs_h5_55 h5,
+section.cus_fs_h6_55 h6,
+section.cus_fs_p_55 p,
+section.cus_fs_a_55 a,
+section.cus_fs_li_55 li,
+section.cus_fs_ul_55 ul,
+section.cus_fs_ol_55 ol,
+section.cus_fs_dl_55 dl,
+section.cus_fs_dt_55 dt,
+section.cus_fs_dd_55 dd,
+section.cus_fs_code_55 code,
+section.cus_fs_table_55 table,
+section.cus_fs_tr_55 tr,
+section.cus_fs_th_55 th,
+section.cus_fs_td_55 td {
+  font-size: 55px;
+}
+section.cus_fs_h1_56 h1,
+section.cus_fs_h2_56 h2,
+section.cus_fs_h3_56 h3,
+section.cus_fs_h4_56 h4,
+section.cus_fs_h5_56 h5,
+section.cus_fs_h6_56 h6,
+section.cus_fs_p_56 p,
+section.cus_fs_a_56 a,
+section.cus_fs_li_56 li,
+section.cus_fs_ul_56 ul,
+section.cus_fs_ol_56 ol,
+section.cus_fs_dl_56 dl,
+section.cus_fs_dt_56 dt,
+section.cus_fs_dd_56 dd,
+section.cus_fs_code_56 code,
+section.cus_fs_table_56 table,
+section.cus_fs_tr_56 tr,
+section.cus_fs_th_56 th,
+section.cus_fs_td_56 td {
+  font-size: 56px;
+}
+section.cus_fs_h1_57 h1,
+section.cus_fs_h2_57 h2,
+section.cus_fs_h3_57 h3,
+section.cus_fs_h4_57 h4,
+section.cus_fs_h5_57 h5,
+section.cus_fs_h6_57 h6,
+section.cus_fs_p_57 p,
+section.cus_fs_a_57 a,
+section.cus_fs_li_57 li,
+section.cus_fs_ul_57 ul,
+section.cus_fs_ol_57 ol,
+section.cus_fs_dl_57 dl,
+section.cus_fs_dt_57 dt,
+section.cus_fs_dd_57 dd,
+section.cus_fs_code_57 code,
+section.cus_fs_table_57 table,
+section.cus_fs_tr_57 tr,
+section.cus_fs_th_57 th,
+section.cus_fs_td_57 td {
+  font-size: 57px;
+}
+section.cus_fs_h1_58 h1,
+section.cus_fs_h2_58 h2,
+section.cus_fs_h3_58 h3,
+section.cus_fs_h4_58 h4,
+section.cus_fs_h5_58 h5,
+section.cus_fs_h6_58 h6,
+section.cus_fs_p_58 p,
+section.cus_fs_a_58 a,
+section.cus_fs_li_58 li,
+section.cus_fs_ul_58 ul,
+section.cus_fs_ol_58 ol,
+section.cus_fs_dl_58 dl,
+section.cus_fs_dt_58 dt,
+section.cus_fs_dd_58 dd,
+section.cus_fs_code_58 code,
+section.cus_fs_table_58 table,
+section.cus_fs_tr_58 tr,
+section.cus_fs_th_58 th,
+section.cus_fs_td_58 td {
+  font-size: 58px;
+}
+section.cus_fs_h1_59 h1,
+section.cus_fs_h2_59 h2,
+section.cus_fs_h3_59 h3,
+section.cus_fs_h4_59 h4,
+section.cus_fs_h5_59 h5,
+section.cus_fs_h6_59 h6,
+section.cus_fs_p_59 p,
+section.cus_fs_a_59 a,
+section.cus_fs_li_59 li,
+section.cus_fs_ul_59 ul,
+section.cus_fs_ol_59 ol,
+section.cus_fs_dl_59 dl,
+section.cus_fs_dt_59 dt,
+section.cus_fs_dd_59 dd,
+section.cus_fs_code_59 code,
+section.cus_fs_table_59 table,
+section.cus_fs_tr_59 tr,
+section.cus_fs_th_59 th,
+section.cus_fs_td_59 td {
+  font-size: 59px;
+}
+section.cus_fs_h1_60 h1,
+section.cus_fs_h2_60 h2,
+section.cus_fs_h3_60 h3,
+section.cus_fs_h4_60 h4,
+section.cus_fs_h5_60 h5,
+section.cus_fs_h6_60 h6,
+section.cus_fs_p_60 p,
+section.cus_fs_a_60 a,
+section.cus_fs_li_60 li,
+section.cus_fs_ul_60 ul,
+section.cus_fs_ol_60 ol,
+section.cus_fs_dl_60 dl,
+section.cus_fs_dt_60 dt,
+section.cus_fs_dd_60 dd,
+section.cus_fs_code_60 code,
+section.cus_fs_table_60 table,
+section.cus_fs_tr_60 tr,
+section.cus_fs_th_60 th,
+section.cus_fs_td_60 td {
+  font-size: 60px;
+}
